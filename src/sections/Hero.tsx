@@ -58,7 +58,7 @@ export default function Hero() {
       <div className={`hero-skeleton absolute inset-0 transition-opacity duration-500 ${videoReady ? 'opacity-0' : 'opacity-100'}`} aria-hidden="true" />
       <video
         ref={videoRef}
-        className="absolute inset-0 h-[116%] w-full object-cover"
+        className="hero-video"
         src="/remindmht/videos/hero.mp4"
         autoPlay
         muted

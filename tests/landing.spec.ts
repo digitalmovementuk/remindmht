@@ -16,6 +16,12 @@ for (const viewport of viewports) {
     await page.goto('/');
     await expect(page.getByRole('heading', { name: /Your Mind/i })).toBeVisible();
     await expect(page.getByRole('heading', { name: /Therapy is not one size fits all/i })).toBeVisible();
+    const videoBox = await page.locator('video').boundingBox();
+    expect(videoBox).not.toBeNull();
+    expect(videoBox!.width).toBeGreaterThanOrEqual(viewport.width);
+    expect(videoBox!.height).toBeGreaterThanOrEqual(viewport.height);
+    expect(videoBox!.x).toBeLessThanOrEqual(0);
+    expect(videoBox!.y).toBeLessThanOrEqual(0);
     await page.screenshot({ path: `tests/screenshots/${viewport.name}.png`, fullPage: true });
   });
 }
