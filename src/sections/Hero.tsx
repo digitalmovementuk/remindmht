@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FormEvent, MouseEvent, useEffect, useRef, useState } from 'react';
+import heroVideo from '../assets/videos/Hero.mp4';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,7 +60,7 @@ export default function Hero() {
       <video
         ref={videoRef}
         className="hero-video"
-        src="/remindmht/videos/hero.mp4"
+        src={heroVideo}
         autoPlay
         muted
         loop
