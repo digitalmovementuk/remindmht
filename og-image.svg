@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#1A1464"/>
+      <stop offset=".62" stop-color="#302879"/>
+      <stop offset="1" stop-color="#C850C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="72" y="72" width="1056" height="486" rx="32" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.24)"/>
+  <text x="112" y="156" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Re<tspan fill="#FF6B6B">;</tspan>mind</text>
+  <text x="112" y="298" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Your Mind,</text>
+  <text x="112" y="398" fill="#FFCADB" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Your Healing.</text>
+  <text x="116" y="472" fill="rgba(255,255,255,.84)" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Bespoke therapy and mental health care in Whiteley</text>
+  <circle cx="1010" cy="174" r="62" fill="#FF6B6B" opacity=".88"/>
+  <circle cx="940" cy="426" r="118" fill="#FFFFFF" opacity=".1"/>
+</svg>
