@@ -8,9 +8,12 @@ module.exports = {
         coral: '#FF6B6B',
         magenta: '#C850C0',
         paper: '#F8F7F4',
+        ink: '#191824',
       },
       boxShadow: {
         card: '0 4px 24px rgba(0,0,0,0.08)',
+        cardStrong: '0 18px 48px rgba(0,0,0,0.14)',
+        glow: '0 18px 48px rgba(255,107,107,0.32)',
       },
       borderRadius: {
         card: '20px',

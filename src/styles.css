@@ -16,6 +16,23 @@ body {
   background: #F8F7F4;
   color: #0f172a;
 }
+.hero-skeleton {
+  background:
+    linear-gradient(160deg, rgba(26,20,100,0.94), rgba(25,24,36,0.86)),
+    linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+  background-size: 100% 100%, 220% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+.ripple {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(26,20,100,0.18);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 520ms ease-out forwards;
+  pointer-events: none;
+}
 .skip-link {
   position: absolute;
   left: 8px;
@@ -28,6 +45,19 @@ body {
 }
 .skip-link:focus { top: 8px; }
 :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+video {
+  background: #1A1464;
+}
+@keyframes shimmer {
+  0% { background-position: 0 0, 160% 0; }
+  100% { background-position: 0 0, -60% 0; }
+}
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(14);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
