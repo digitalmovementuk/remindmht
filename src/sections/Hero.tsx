@@ -120,7 +120,7 @@ export default function Hero() {
             <a href="#approach" className="min-h-11 py-3 text-center text-base font-semibold leading-5 text-white underline-offset-4 transition hover:underline md:ml-6">
               Explore Our Therapies →
             </a>
-          </div>
+          </motion.div>
         </div>
 
         <motion.form
@@ -143,7 +143,7 @@ export default function Hero() {
           <button type="submit" className="mt-6 min-h-11 w-full rounded-pill bg-coral px-6 py-3 text-base font-semibold leading-5 text-white shadow-glow transition duration-200 hover:scale-[1.02]">
             Request Consultation
           </button>
-        </form>
+        </motion.form>
       </div>
 
       <div ref={indicatorRef} className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-white/70 md:flex" aria-hidden="true">
